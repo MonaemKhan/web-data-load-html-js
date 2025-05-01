@@ -1,0 +1,137 @@
+*{
+    font-family: Arial, sans-serif;
+}
+.imageouterStype{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Card Container */
+.card {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;    
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: space-evenly; /* Distributes items with space between them */
+    gap: 20px;
+}
+
+/* Card Body */
+.card-body {
+    width: 500px;
+    padding: 30px;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Card Text */
+.card-text {
+    color: #777;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Card Button */
+.card-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+.card-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Overlay for the popup */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000;
+}
+
+/* Modal Box */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    text-align: center;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #ff0000;
+}

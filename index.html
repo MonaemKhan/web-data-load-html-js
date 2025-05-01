@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <button onclick="closePopupClick()" class="close-btn" id="closeBtn">&times;</button>
+            <h2 id="popupTitle">Popup Modal</h2>
+            <p id="popupBody">This is a simple popup window.</p>
+        </div>
+    </div>
+
+    <div class="imageouterStype">
+        <div class="image-container">
+            <img id="myImage" src="./Images/1.jpg" alt="Image" class="image">
+            <button onclick="prevClick()" id="prevbtn" class="prev-btn">Previous</button>
+            <button onclick="nextClick()" id="nextbtn" class="next-btn">Next</button>
+        </div>        
+    </div>
+
+    <div>
+        <div id="cardId" class="card" style="display:  ;">
+        </div>
+    </div>
+</body>
+</html>
